@@ -1,7 +1,8 @@
-# Start-Processを使用してバックエンドを実行する
-Start-Process npm -ArgumentList "run start" -WorkingDirectory "./backend" -NoNewWindow
+# バックエンドを実行する
+cd "backend"
+npm run start &
 
 # フロントエンドを実行する
-cd "frontend"
+cd "../frontend"
 npm install
 npm run dev
