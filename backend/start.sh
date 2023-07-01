@@ -2,5 +2,6 @@
 Start-Process npm -ArgumentList "run start" -WorkingDirectory "./backend" -NoNewWindow
 
 # フロントエンドを実行する
-cd "./frontend"
+cd "frontend"
+npm install
 npm run dev
